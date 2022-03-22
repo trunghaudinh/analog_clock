@@ -1,13 +1,13 @@
 import 'package:analog_clock/core/config/routes/route_name.dart';
-import 'package:analog_clock/presentation/modules/home_page.dart';
+import 'package:analog_clock/presentation/pages/alarm/alarm_page.dart';
 import 'package:flutter/material.dart';
 
 class Routers {
   static Route onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case RouteName.homePage:
+      case RouteName.alarmPage:
         {
-          return MaterialPageRoute(builder: (_) => HomePage());
+          return MaterialPageRoute(builder: (_) => const AlarmPage());
         }
       default:
         return MaterialPageRoute(
