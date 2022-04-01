@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class StopWatchPage extends StatelessWidget {
   const StopWatchPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text("stop watch page"),);
+    return Scaffold(body: Container(child: Text("stop watch page"),));
   }
 }

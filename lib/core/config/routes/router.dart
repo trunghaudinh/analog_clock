@@ -1,4 +1,5 @@
 import 'package:analog_clock/core/config/routes/route_name.dart';
+import 'package:analog_clock/presentation/app.dart';
 import 'package:analog_clock/presentation/pages/alarm/alarm_page.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,10 @@ class Routers {
       case RouteName.alarmPage:
         {
           return MaterialPageRoute(builder: (_) => const AlarmPage());
+        }
+      case RouteName.appPage:
+        {
+          return MaterialPageRoute(builder: (_) => const AppPage());
         }
       default:
         return MaterialPageRoute(
